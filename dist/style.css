@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+h1 {
+  font-family: "Inter-SemiBold";
+  font-size: 25px;
+  line-height: 105%;
+  color: rgb(74, 110, 176);
+}
+
+h2 {
+  font-family: "Inter-SemiBold";
+  font-size: 18px;
+  line-height: 105%;
+  color: aliceblue;
+}
+
+h3 {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: aliceblue;
+}
+
+h4 {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: rgb(176, 194, 209);
+}
+
+html {
+  background-color: rgb(219, 220, 242);
+}
+
+.weather_title {
+  text-align: center;
+  padding: 10px 0 10px;
+}
+
+.weather_card {
+  background-color: rgb(75, 128, 226);
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.top_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location_temperature_yesterday {
+  padding-top: 5px;
+}
+.location_temperature_yesterday .location_temperature_yesterday_bold {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: aliceblue;
+  padding-top: 20px;
+}
+
+.link_telegram .circle_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  background-color: hsla(208, 100%, 97%, 0.2);
+  border-radius: 50%;
+}
+.link_telegram .circle_logo .telegram_logo_pic {
+  width: 12px;
+  height: 12px;
+  fill: aliceblue;
+}
+
+.main_block {
+  padding: 25px 0 25px;
+}
+
+.main_weather_data {
+  width: 370px;
+  display: grid;
+  grid-template-areas: "a a a b b b" "c c d d e e";
+  row-gap: 15px;
+  column-gap: 5px;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+li {
+  font-family: "Inter-SemiBold";
+  font-size: 18px;
+  line-height: 105%;
+  color: aliceblue;
+}
+
+.main_weather_data_temperature {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: aliceblue;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.main_weather_data_temperature_pic {
+  width: 40px;
+  height: 40px;
+}
+
+.weather_description_feel {
+  padding-top: 5px;
+}
+
+.weather_description_feel_ass {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: aliceblue;
+}
+
+.weather_description_wind_speed_icon,
+.weather_description_wet_icon,
+.weather_description_pressure_icon {
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  padding-right: 4px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(176, 194, 209);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@mixin h1 {
+  font-family: "Inter-SemiBold";
+  font-size: 25px;
+  line-height: 105%;
+  color: rgb(74, 110, 176);
+}
+@mixin h2 {
+  font-family: "Inter-SemiBold";
+  font-size: 18px;
+  line-height: 105%;
+  color: aliceblue;
+}
+@mixin h3 {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: aliceblue;
+}
+@mixin h4 {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  line-height: 105%;
+  color: rgb(176, 194, 209);
+}

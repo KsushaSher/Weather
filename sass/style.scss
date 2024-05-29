@@ -1,0 +1,139 @@
+@import "./reset.scss";
+@import "./common.scss";
+@import "./fonts.scss";
+
+h1 {
+  @include h1();
+}
+h2 {
+  @include h2();
+}
+h3 {
+  @include h3();
+}
+h4 {
+  @include h4();
+}
+
+html {
+  background-color: rgb(219, 220, 242);
+  //   color: aliceblue;
+}
+.weather_title {
+  text-align: center;
+  padding: 10px 0 10px;
+}
+.weather_card {
+  background-color: rgb(75, 128, 226);
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+// start top_block
+.top_block {
+  display: flex;
+  justify-content: space-between;
+}
+.location_temperature_yesterday {
+  padding-top: 5px;
+  .location_temperature_yesterday_bold {
+    @include h3();
+    padding-top: 20px;
+  }
+}
+
+.link_telegram {
+  //   margin: 4px;
+  .circle_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    background-color: hsl(208, 100%, 97%, 0.2);
+    border-radius: 50%;
+    .telegram_logo_pic {
+      width: 12px;
+      height: 12px;
+      fill: aliceblue;
+      //   stroke: aliceblue;
+      //   stroke-width="8"
+      //   stroke-linecap="round"
+      //   stroke-linejoin="round"
+    }
+  }
+}
+// end top_block
+
+// start main_block
+.main_block {
+  padding: 25px 0 25px;
+}
+.main_weather_data {
+  width: 370px;
+  display: grid;
+  grid-template-areas:
+    "a a a b b b"
+    "c c d d e e";
+  row-gap: 15px;
+  column-gap: 5px;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+li {
+  @include h2();
+}
+.main_weather_data_temperature {
+  @include h3();
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.main_weather_data_temperature_pic {
+  width: 40px;
+  height: 40px;
+}
+.weather_description_feel {
+  padding-top: 5px;
+}
+.weather_description_feel_ass {
+  @include h3();
+}
+
+.weather_description_wind_speed_icon,
+.weather_description_wet_icon,
+.weather_description_pressure_icon {
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  padding-right: 4px;
+}
+// .weather_description_wet_icon {
+//   width: 15px;
+//   height: 15px;
+// }
+// .weather_description_pressure_icon {
+//   width: 15px;
+//   height: 15px;
+// }
+
+// end main_block
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(176, 194, 209);
+}
