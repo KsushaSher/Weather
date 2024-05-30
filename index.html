@@ -4,85 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/style.css" />
-    <title>Weather forecast</title>
+    <link type="image/svg+xml" href="/img/svg/favicon.svg" rel="icon" />
+    <title>Weather</title>
   </head>
   <body>
     <header class="weather_title">
       <h1>Прогноз погоды на сегодня</h1>
     </header>
     <main>
-      <article class="weather_card">
-        <div class="top_block">
-          <div class="top_block_left_side">
-            <h2>Квартал Верхний город, Минск</h2>
-            <h4 class="location_temperature_yesterday">
-              Сейчас <span id="current_time"></span>. Вчера в это время
-              <span class="location_temperature_yesterday_bold">+24°</span>
-            </h4>
-          </div>
-          <a href="/" class="link_telegram">
-            <div class="circle_logo">
-              <svg class="telegram_logo_pic" viewBox="0 0 32 32">
-                <path
-                  d="M17 32c-0.072 0-0.144-0.008-0.217-0.024-0.458-0.102-0.783-0.507-0.783-0.976v-15h-15c-0.469 0-0.875-0.326-0.976-0.783s0.129-0.925 0.553-1.123l30-14c0.381-0.178 0.833-0.098 1.13 0.199s0.377 0.749 0.199 1.13l-14 30c-0.167 0.358-0.524 0.577-0.906 0.577zM5.508 14h11.492c0.552 0 1 0.448 1 1v11.492l10.931-23.423-23.423 10.931z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-        </div>
-
-        <div class="main_block">
-          <ul class="main_weather_data">
-            <li class="a main_weather_data_temperature" id="main_weather_data_temperature">
-              <img
-                src="./img/meteocons-icons/SVG/30.svg"
-                alt="main_weather_pic"
-                class="main_weather_data_temperature_pic"
-              />
-            </li>
-            <li class="b weather_description">
-              <h3>Облачно с прояснениями</h3>
-              <h4 class="weather_description_feel">
-                Ощущается как
-                <span class="weather_description_feel_ass" id="apparent_temperature"></span>
-              </h4>
-            </li>
-            <li class="c" id="wind_speed">
-              <img
-                src="./img/meteocons-icons/SVG/6.svg"
-                alt="wind_speed_icon"
-                class="weather_description_wind_speed_icon"
-              />
-            </li>
-            <li class="d" id="relative_humidity">
-              <img
-                src="./img/meteocons-icons/SVG/droplet.svg"
-                alt="wet_icon"
-                class="weather_description_wet_icon"
-              />
-            </li>
-            <li class="e" id="surface_pressure">
-              <img
-                src="./img/meteocons-icons/SVG/43.svg"
-                alt="pressure_icon"
-                class="weather_description_pressure_icon"
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="line"></div>
-        <div class="slider">
-          <div class="circle_arrow_left"></div>
-          <div class="slider_content_wrapper">
-            <div class="slider_time">18:00</div>
-            <div class="slider_weather_picture">
-              <img src="" alt="" />
-            </div>
-            <div class="slider_temperature">+24</div>
-          </div>
-          <div class="circle_arrow_right"></div>
-        </div>
-      </article>
+      <article class="weather_card" id="weather_card"></article>
     </main>
     <script src="index.js"></script>
   </body>

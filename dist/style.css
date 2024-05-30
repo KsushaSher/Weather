@@ -285,6 +285,7 @@ li {
 .line {
   width: 100%;
   height: 1px;
+  margin-bottom: 13px;
   background-color: rgb(176, 194, 209);
 }
 
